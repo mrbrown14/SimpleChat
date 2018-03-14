@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    let messageViewController = ChatMessageViewController()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationController?.pushViewController(messageViewController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
