@@ -7,5 +7,6 @@ target 'SimpleChat' do
 
   # Pods for SimpleChat
   pod 'Texture'
+  pod 'FPSCounter', :git => 'https://github.com/konoma/fps-counter.git', :branch => 'feature/swift-4'
 
 end

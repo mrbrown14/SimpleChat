@@ -1,4 +1,5 @@
 PODS:
+  - FPSCounter (2.0.0)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -23,14 +24,26 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - FPSCounter (from `https://github.com/konoma/fps-counter.git`, branch `feature/swift-4`)
   - Texture
 
+EXTERNAL SOURCES:
+  FPSCounter:
+    :branch: feature/swift-4
+    :git: https://github.com/konoma/fps-counter.git
+
+CHECKOUT OPTIONS:
+  FPSCounter:
+    :commit: 28c07b666a1cf49c3e44c16b9079376fe510203a
+    :git: https://github.com/konoma/fps-counter.git
+
 SPEC CHECKSUMS:
+  FPSCounter: d4b8588434c18de19ef819c9fc06f80ce0924d94
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
 
-PODFILE CHECKSUM: a3201d3cafc9abf2482728492f38d97703047506
+PODFILE CHECKSUM: 2c1971dd8acf1d7f86d1ee1de62baf111894b67e
 
 COCOAPODS: 1.3.1
